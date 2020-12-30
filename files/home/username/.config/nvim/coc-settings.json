@@ -1,0 +1,21 @@
+{
+	"python.jediEnabled": true,
+	"python.jediPath": "/usr/lib/python3.9/site-packages/jedi",
+	"python.analysis.disabled": ["unresolved-import", "undefined-variable"],
+	"python.linting.pylintEnabled": true,
+	"python.linting.pep8Enabled": false,
+	"python.linting.enabled": true,
+
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"filetypes": ["c", "cpp", "objc", "objcpp"],
+			"rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
+            }
+        }
+    }
+}
