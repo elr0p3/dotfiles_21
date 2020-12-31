@@ -224,8 +224,8 @@ format = <label>
 type = internal/date
 interval = 1
 date =
-date-alt = " %d-%m-%Y"
-time = %H:%M:%S
+date-alt = " %a %d-%m-%Y"
+time = %H:%M:%S %a
 time-alt = %H:%M:%S
 ; format-prefix = " "
 ; format-prefix = " "
@@ -233,7 +233,7 @@ format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.orange}
 
-label = %date% %time%
+label = %time% %date%
 
 [module/pulseaudio]
 type = custom/script
