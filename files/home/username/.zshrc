@@ -57,6 +57,7 @@ alias wireshark-sudo='sudo wireshark'
 alias update='/usr/bin/checkupdates'
 alias installed='pacman -Qqe'
 alias installed_list='pacman -Qqett'
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
 # Configuration
 alias edit-bspwm='nvim ~/.config/bspwm/bspwmrc'
