@@ -55,6 +55,8 @@ alias q='exit'
 alias fs='ranger'
 alias wireshark-sudo='sudo wireshark'
 alias update='/usr/bin/checkupdates'
+alias installed='pacman -Qqe'
+alias installed_list='pacman -Qqett'
 
 # Configuration
 alias edit-bspwm='nvim ~/.config/bspwm/bspwmrc'
