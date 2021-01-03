@@ -133,13 +133,9 @@ super + {Left,Down,Up,Right}
 Print
 	flameshot
 
-# alt + s
-	# if [ "$(ps aux|grep screenkey|wc -l)" = "1" ];then \
-		# screenkey; \
-	# else \
-		# killall screenkey; \
-	# fi
 alt + s
-	screenkey
-alt + x
-	killall screenkey
+	~/.config/sxhkd/scripts/screenkey.sh
+# alt + s
+	# screenkey
+# alt + x
+	# killall screenkey
