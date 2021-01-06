@@ -71,6 +71,8 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 # super + {minus,plus}
 	# bspc desktop -f {prev,next}.local
+# super + {grave,plus}
+	# bspc desktop -f {prev,next}.local
 # super + {q,plus}
 	# bspc desktop -f {prev,next}.local
 super + {q,a}
