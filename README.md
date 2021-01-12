@@ -20,15 +20,36 @@ __Dotfiles for ArchLinux in 2021__
 - OS: [ArchLinux](https://archlinux.org/)
 - Display manager: [lightdm](https://github.com/canonical/lightdm)
 - Window manager: [bspwm](https://github.com/baskerville/bspwm)
+- Compositor: [picom](https://github.com/yshui/picom)
 - Shell: [zsh](https://wiki.archlinux.org/index.php/zsh)
 - Terminal: [alacritty](https://github.com/alacritty/alacritty)
 - Editor: [neovim](https://github.com/neovim/neovim)
 - File manager: [ranger](https://github.com/ranger/ranger)
+- App Launcher: [rofi](https://github.com/davatorium/rofi)
 - Status bar: [polybar](https://github.com/polybar/polybar)
-- Color theme: [gruvbox](https://github.com/morhetz/gruvbox)
+- ColorScheme: [gruvbox](https://github.com/morhetz/gruvbox)
 - Fonts: [SF Mono](https://github.com/supercomputra/SF-Mono-Font), [Product Sans](https://befonts.com/product-sans-font.html)
 - Theme: [Equilux Theme](https://github.com/ddnexus/equilux-theme)
 - Icons: [Qogir](https://github.com/vinceliuice/Qogir-icon-theme)
+
+<!---
+https://www.reddit.com/r/unixporn/comments/kvpek9/i3gaps_probably_gruvy/
+Details:
+    OS: Arch Linux
+    Wallpaper: this one
+    WM: i3-gaps
+    Bar: polybar
+    PDF Viewer: Zathura
+    Editor: Vim
+    Compositor: picom-tryone-git
+    Terminal: kitty
+    colorscheme: gruvbox
+    task manager: gtop
+    shell: zsh
+Not shown in screenshots:
+    app launcher: rofi
+    notifications: deadd-notification-center -------------------------------
+--->
 
 ## Wallpaper
 
