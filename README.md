@@ -25,7 +25,7 @@ __Dotfiles for ArchLinux in 2021__
 - Editor: [neovim](https://github.com/neovim/neovim)
 - File manager: [ranger](https://github.com/ranger/ranger)
 - Status bar: [polybar](https://github.com/polybar/polybar)
-- Color theme: [onedark](https://github.com/morhetz/gruvbox)
+- Color theme: [gruvbox](https://github.com/morhetz/gruvbox)
 - Fonts: [SF Mono](https://github.com/supercomputra/SF-Mono-Font), [Product Sans](https://befonts.com/product-sans-font.html)
 - Theme: [Equilux Theme](https://github.com/ddnexus/equilux-theme)
 - Icons: [Qogir](https://github.com/vinceliuice/Qogir-icon-theme)
