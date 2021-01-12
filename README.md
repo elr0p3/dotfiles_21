@@ -2,7 +2,7 @@
 
 __Dotfiles for ArchLinux in 2021__
 
-## Preview:
+## Preview
 
 <!---
 <p float="left">
