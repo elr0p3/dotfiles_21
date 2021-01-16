@@ -316,6 +316,7 @@ format-background = ${colors.background}
 format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.orange}
+click-right = alacritty -e yay
 
 [module/networkspeedup]
 type = internal/network
