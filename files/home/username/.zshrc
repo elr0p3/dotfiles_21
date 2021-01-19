@@ -58,6 +58,10 @@ alias update='/usr/bin/checkupdates'
 alias installed='pacman -Qqe'
 alias installed_list='pacman -Qqett'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias openport='sudo ss -tulpn'
+# alias openport='sudo ss -tulpn|grep -i listen'
+# alias openport='sudo ss -tulwn'
+# alias openport='sudo nmap -p- localhost'
 
 # Configuration
 alias edit-bspwm='nvim ~/.config/bspwm/bspwmrc'
