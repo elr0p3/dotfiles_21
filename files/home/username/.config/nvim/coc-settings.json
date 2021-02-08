@@ -6,6 +6,12 @@
 	"python.linting.pep8Enabled": false,
 	"python.linting.enabled": true,
 
+	"javascript.validate.enable": false,
+	"javascript.suggestionActions.enabled": false,
+
+	"typescript.validate.enable": false,
+	"typescript.suggestionActions.enabled": false,
+	
 	"languageserver": {
 		"ccls": {
 			"command": "ccls",
