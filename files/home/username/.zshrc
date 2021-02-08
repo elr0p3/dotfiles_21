@@ -62,6 +62,7 @@ alias openport='sudo ss -tulpn'
 # alias openport='sudo ss -tulpn|grep -i listen'
 # alias openport='sudo ss -tulwn'
 # alias openport='sudo nmap -p- localhost'
+alias ssh-term='TERM=xterm-256color ssh'
 
 # Configuration
 alias edit-bspwm='nvim ~/.config/bspwm/bspwmrc'
