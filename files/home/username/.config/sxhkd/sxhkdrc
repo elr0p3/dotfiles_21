@@ -21,7 +21,7 @@ super + Escape
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
-
+alacritty
 # close and kill
 super + {_,shift + }w
 	bspc node -{c,k}
@@ -143,3 +143,6 @@ alt + s
 	# screenkey
 # alt + x
 	# killall screenkey
+
+ctrl + alt + t
+	kitty
