@@ -7,12 +7,12 @@ redshift -O 3000
 # --output "HDMI-0" --auto --primary --mode 2560x1440 --rate 144.0 --pos 1080x2110 \
 # --output "DP-0" --auto --mode 1920x1080 --rate 144.0 --rotate left --pos 0x1920
 
-xrandr \
- --output "HDMI-0" --auto --primary --mode 2560x1440 --rate 144.0\
- --output "DP-0" --auto --mode 1920x1080 --rate 144.0 --left-of "HDMI-0"
-
 #xrandr \
-# --output "HDMI-0" --auto --primary --mode 2560x1440 --rate 144.0 --pos 1920x1000\
-# --output "DP-0" --auto --mode 1920x1080 --rate 144.0 --pos 0x1080
+# --output "HDMI-0" --auto --primary --mode 2560x1440 --rate 144.0\
+# --output "DP-0" --auto --mode 1920x1080 --rate 144.0 --left-of "HDMI-0"
+
+xrandr \
+ --output "HDMI-0" --primary --mode 2560x1440 --rate 144.0 --pos 1920x0 --rotate normal\
+ --output "DP-0" --mode 1920x1080 --rate 144.0 --pos 0x180 --rotate normal
 
 # https://superuser.com/questions/485120/how-do-i-align-the-bottom-edges-of-two-monitors-with-xrandr
