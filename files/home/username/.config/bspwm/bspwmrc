@@ -54,6 +54,7 @@ bspc rule -a firefox desktop='^6' follow=on
 bspc rule -a vlc state=floating
 # bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc rule -a steam state=floating
 
 # desktop='^6' 		-> application will appear on the desktop 6 
 # state=floating	-> the application will open in a floating window
