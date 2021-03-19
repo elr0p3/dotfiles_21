@@ -16,7 +16,7 @@ zstyle ':prompt:pure:prompt:error' color red
 
 # - - - PATH - - -
 PATH=$PATH:~/.local/bin
-export JAVA_HOME=/usr/lib/jvm/java-14-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-15-openjdk
 export VISUAL=nvim;
 export EDITOR=nvim;
 
@@ -58,10 +58,18 @@ alias wireshark-sudo='sudo wireshark'
 alias update='/usr/bin/checkupdates'
 alias installed='pacman -Qqe'
 alias installed_list='pacman -Qqett'
+# alias dependencies='pacman -Qi $1|grep 'Depends On'|cut -d: -f2'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias openport='sudo ss -tulpn'
+alias copy='xsel -b'
+alias pt='xsel -p'
+
+
+# Networking
+alias openport='sudo lsof -i -P -n | grep LISTEN'
+# alias openport='sudo ss -tulpn'
 # alias openport='sudo ss -tulpn|grep -i listen'
 # alias openport='sudo ss -tulwn'
+# alias openport='sudo netstat -nlp'
 # alias openport='sudo nmap -p- localhost'
 alias ssh-term='TERM=xterm-256color ssh'
 
