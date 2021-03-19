@@ -307,7 +307,7 @@ menu-0-2-foreground = ${colors.foreground}
 [module/pacman-updates]
 type = custom/script
 exec = /usr/bin/checkupdates|wc -l
-interval = 1000
+interval = 10
 format-padding = 2
 label = %output%
 format-foreground = ${colors.foreground}
