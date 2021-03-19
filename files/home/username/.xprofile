@@ -1,0 +1,8 @@
+
+setxkbmap es
+
+redshift -O 3000
+
+xrandr \
+ --output "HDMI-0" --auto --primary --mode 2560x1440 --rate 144.0 --pos 1080x2110 \
+ --output "DP-0" --auto --mode 1920x1080 --rate 144.0 --rotate left --pos 0x1920
