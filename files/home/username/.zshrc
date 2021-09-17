@@ -16,9 +16,10 @@ zstyle ':prompt:pure:prompt:error' color red
 
 # - - - PATH - - -
 PATH=$PATH:~/.local/bin
-export JAVA_HOME=/usr/lib/jvm/java-15-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-16-openjdk
 export VISUAL=nvim;
 export EDITOR=nvim;
+export XAMPP_ROOT=/opt/lampp;
 
 # - - - Initial config - - -
 # Lines configured by zsh-newuser-install
@@ -47,6 +48,20 @@ bindkey '^R' history-incremental-search-backward
 # bindkey -M menuselect 'j' vi-down-line-or-history
 # bindkey -v '^?' backward-delete-char
 
+# configure key keybindings
+bindkey -e                                        # emacs key bindings
+bindkey ' ' magic-space                           # do history expansion on space
+bindkey '^[[3;5~' kill-word                       # ctrl + Supr
+bindkey '^[[3~' delete-char                       # delete
+bindkey '^[[1;5C' forward-word                    # ctrl + ->
+bindkey '^[[1;5D' backward-word                   # ctrl + <-
+bindkey '^[[5~' beginning-of-buffer-or-history    # page up
+bindkey '^[[6~' end-of-buffer-or-history          # page down
+bindkey '^[[H' beginning-of-line                  # home
+bindkey '^[[F' end-of-line                        # end
+bindkey '^[[Z' undo                               # shift + tab undo last action
+
+
 # - - - Alias - - -
 # alias ll='ls -laF --color'
 alias ll='ls -laF'
@@ -62,6 +77,7 @@ alias installed_list='pacman -Qqett'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias copy='xsel -b'
 alias pt='xsel -p'
+alias youtube-dl-mp3='youtube-dl --extract-audio --audio-format mp3'
 
 
 # Networking
@@ -95,6 +111,7 @@ alias edit-javaWMdeloscojones='nvim /etc/profile.d/jre.sh'
 alias edit-alacritty='nvim ~/.config/alacritty/alacritty.yml'
 alias edit-ranger='cd ~/.config/ranger/ && nvim'
 alias load-average="uptime | grep -ohe 'load average[s:][: ].*' | awk '{ print $3" "$4" "$5"," }' | sed 's/,//g'"
+alias cdusb="cd /run/media/r0p3/"
 
 # - - - System - - -
 alias sysenable='systemctl list-unit-files --state=enabled'
@@ -147,6 +164,11 @@ function clean
   paccache -v -d
 }
 alias clean-all='sudo pacman -Rsn $(yay -Qqtd)'
+
+
+function mkt {
+	mkdir {nmap,content,exploits,scripts}
+}
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
