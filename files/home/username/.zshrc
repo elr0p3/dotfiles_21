@@ -64,7 +64,7 @@ bindkey '^[[Z' undo                               # shift + tab undo last action
 
 # - - - Alias - - -
 # alias ll='ls -laF --color'
-alias ll='ls -laF'
+alias ll='ls -lahF'
 alias py='python3'
 alias :q='exit'
 alias q='exit'
