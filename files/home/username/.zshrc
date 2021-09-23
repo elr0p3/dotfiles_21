@@ -78,6 +78,8 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 alias copy='xsel -b'
 alias pt='xsel -p'
 alias youtube-dl-mp3='youtube-dl --extract-audio --audio-format mp3'
+alias share-hdmi='xrandr --output HDMI-A-0 --same-as eDP'
+# alias share-hdmi='xrandr --output HDMI-A-0 --mode 1920x1080'
 
 
 # Networking
