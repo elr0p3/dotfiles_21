@@ -114,6 +114,7 @@ alias edit-alacritty='nvim ~/.config/alacritty/alacritty.yml'
 alias edit-ranger='cd ~/.config/ranger/ && nvim'
 alias load-average="uptime | grep -ohe 'load average[s:][: ].*' | awk '{ print $3" "$4" "$5"," }' | sed 's/,//g'"
 alias cdusb="cd /run/media/r0p3/"
+alias cdphone="cd /run/user/1000/gvfs/"
 
 # - - - System - - -
 alias sysenable='systemctl list-unit-files --state=enabled'
